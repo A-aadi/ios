@@ -15,6 +15,7 @@
 		D54DAB061CEC894D00D18604 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D54DAB041CEC894D00D18604 /* LaunchScreen.storyboard */; };
 		D54DAB111CEC894D00D18604 /* CallBreakTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D54DAB101CEC894D00D18604 /* CallBreakTests.m */; };
 		D54DAB1C1CEC894D00D18604 /* CallBreakUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D54DAB1B1CEC894D00D18604 /* CallBreakUITests.m */; };
+		D54DAB2A1CECC20F00D18604 /* help.text in Sources */ = {isa = PBXBuildFile; fileRef = D54DAB291CECC20F00D18604 /* help.text */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		D54DAB171CEC894D00D18604 /* CallBreakUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CallBreakUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D54DAB1B1CEC894D00D18604 /* CallBreakUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CallBreakUITests.m; sourceTree = "<group>"; };
 		D54DAB1D1CEC894D00D18604 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D54DAB291CECC20F00D18604 /* help.text */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = help.text; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 				D54DAB041CEC894D00D18604 /* LaunchScreen.storyboard */,
 				D54DAB071CEC894D00D18604 /* Info.plist */,
 				D54DAAF61CEC894D00D18604 /* Supporting Files */,
+				D54DAB291CECC20F00D18604 /* help.text */,
 			);
 			path = CallBreak;
 			sourceTree = "<group>";
@@ -271,6 +274,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D54DAAFE1CEC894D00D18604 /* ViewController.m in Sources */,
+				D54DAB2A1CECC20F00D18604 /* help.text in Sources */,
 				D54DAAFB1CEC894D00D18604 /* AppDelegate.m in Sources */,
 				D54DAAF81CEC894D00D18604 /* main.m in Sources */,
 			);

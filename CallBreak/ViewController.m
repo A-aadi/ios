@@ -10,9 +10,16 @@
 
 @interface ViewController ()
 
+
 @end
 
 @implementation ViewController
+- (IBAction)playText:(id)sender {
+    
+}
+- (IBAction)helpButton:(id)sender {
+    
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];

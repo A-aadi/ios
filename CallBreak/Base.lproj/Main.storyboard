@@ -1,25 +1,109 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="400" height="520"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CALL- BREAK " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bg9-b8-kk2">
+                                <rect key="frame" x="30" y="120" width="340" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="bYa-0E-uIT"/>
+                                    <constraint firstAttribute="width" constant="340" id="cmB-zc-gCP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="cmB-zc-gCP"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fQ3-Ue-wRL">
+                                <rect key="frame" x="148" y="191" width="104" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="104" id="N9o-WS-5Wh"/>
+                                    <constraint firstAttribute="width" constant="104" id="RXo-Lx-2ly"/>
+                                    <constraint firstAttribute="height" constant="30" id="sXH-k3-Db1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Play"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="RXo-Lx-2ly"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="playText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d9k-bd-Pxv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qpb-cd-W8q">
+                                <rect key="frame" x="148" y="245" width="104" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="104" id="Ejl-t3-OHi"/>
+                                    <constraint firstAttribute="height" constant="30" id="wwh-Jy-VtL"/>
+                                </constraints>
+                                <state key="normal" title="HELP"/>
+                                <connections>
+                                    <action selector="helpButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bS5-nC-Y8G"/>
+                                    <segue destination="pfk-ac-W8J" kind="push" id="2Yh-bH-5UR"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fQ3-Ue-wRL" firstAttribute="top" secondItem="bg9-b8-kk2" secondAttribute="bottom" constant="40" id="1Rv-YB-7OO"/>
+                            <constraint firstItem="Qpb-cd-W8q" firstAttribute="top" secondItem="fQ3-Ue-wRL" secondAttribute="bottom" constant="24" id="30V-c8-A1q"/>
+                            <constraint firstItem="bg9-b8-kk2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="8Vv-UO-IUk"/>
+                            <constraint firstItem="bg9-b8-kk2" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="9zz-KP-TSg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bg9-b8-kk2" secondAttribute="trailing" constant="10" id="UuW-1c-PKH"/>
+                            <constraint firstItem="Qpb-cd-W8q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yYa-TY-MV6"/>
+                            <constraint firstItem="fQ3-Ue-wRL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yxh-wW-CKv"/>
+                        </constraints>
                     </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="400" height="520"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="216" y="422"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="hcm-iU-WvK">
+            <objects>
+                <viewController id="pfk-ac-W8J" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jay-UQ-cMX"/>
+                        <viewControllerLayoutGuide type="bottom" id="tAe-An-2bS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ql0-Rm-bze">
+                        <rect key="frame" x="0.0" y="0.0" width="350" height="500"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="jZO-u6-xmw"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="350" height="500"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bYr-Dd-1Fq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="717" y="417"/>
         </scene>
     </scenes>
 </document>
