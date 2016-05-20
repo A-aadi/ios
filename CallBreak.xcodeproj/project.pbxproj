@@ -15,7 +15,10 @@
 		D54DAB061CEC894D00D18604 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D54DAB041CEC894D00D18604 /* LaunchScreen.storyboard */; };
 		D54DAB111CEC894D00D18604 /* CallBreakTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D54DAB101CEC894D00D18604 /* CallBreakTests.m */; };
 		D54DAB1C1CEC894D00D18604 /* CallBreakUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D54DAB1B1CEC894D00D18604 /* CallBreakUITests.m */; };
-		D54DAB2A1CECC20F00D18604 /* help.text in Sources */ = {isa = PBXBuildFile; fileRef = D54DAB291CECC20F00D18604 /* help.text */; };
+		D54DAB2F1CED826900D18604 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D54DAB2E1CED826900D18604 /* SecondViewController.m */; };
+		D54DAB311CED878F00D18604 /* File.rtf in Resources */ = {isa = PBXBuildFile; fileRef = D54DAB301CED878F00D18604 /* File.rtf */; };
+		D54DAB331CEE0AC800D18604 /* help.html in Resources */ = {isa = PBXBuildFile; fileRef = D54DAB321CEE0AC800D18604 /* help.html */; };
+		D54DAB361CEE18C200D18604 /* JoinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D54DAB351CEE18C200D18604 /* JoinViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +55,12 @@
 		D54DAB171CEC894D00D18604 /* CallBreakUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CallBreakUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D54DAB1B1CEC894D00D18604 /* CallBreakUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CallBreakUITests.m; sourceTree = "<group>"; };
 		D54DAB1D1CEC894D00D18604 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D54DAB291CECC20F00D18604 /* help.text */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = help.text; sourceTree = "<group>"; };
+		D54DAB2D1CED826900D18604 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		D54DAB2E1CED826900D18604 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		D54DAB301CED878F00D18604 /* File.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = File.rtf; sourceTree = "<group>"; };
+		D54DAB321CEE0AC800D18604 /* help.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = help.html; sourceTree = "<group>"; };
+		D54DAB341CEE18C200D18604 /* JoinViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JoinViewController.h; sourceTree = "<group>"; };
+		D54DAB351CEE18C200D18604 /* JoinViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JoinViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,16 +111,21 @@
 		D54DAAF51CEC894D00D18604 /* CallBreak */ = {
 			isa = PBXGroup;
 			children = (
+				D54DAB321CEE0AC800D18604 /* help.html */,
 				D54DAAF91CEC894D00D18604 /* AppDelegate.h */,
 				D54DAAFA1CEC894D00D18604 /* AppDelegate.m */,
 				D54DAAFC1CEC894D00D18604 /* ViewController.h */,
 				D54DAAFD1CEC894D00D18604 /* ViewController.m */,
 				D54DAAFF1CEC894D00D18604 /* Main.storyboard */,
+				D54DAB301CED878F00D18604 /* File.rtf */,
 				D54DAB021CEC894D00D18604 /* Assets.xcassets */,
 				D54DAB041CEC894D00D18604 /* LaunchScreen.storyboard */,
 				D54DAB071CEC894D00D18604 /* Info.plist */,
 				D54DAAF61CEC894D00D18604 /* Supporting Files */,
-				D54DAB291CECC20F00D18604 /* help.text */,
+				D54DAB2D1CED826900D18604 /* SecondViewController.h */,
+				D54DAB2E1CED826900D18604 /* SecondViewController.m */,
+				D54DAB341CEE18C200D18604 /* JoinViewController.h */,
+				D54DAB351CEE18C200D18604 /* JoinViewController.m */,
 			);
 			path = CallBreak;
 			sourceTree = "<group>";
@@ -247,7 +260,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D54DAB061CEC894D00D18604 /* LaunchScreen.storyboard in Resources */,
+				D54DAB331CEE0AC800D18604 /* help.html in Resources */,
 				D54DAB031CEC894D00D18604 /* Assets.xcassets in Resources */,
+				D54DAB311CED878F00D18604 /* File.rtf in Resources */,
 				D54DAB011CEC894D00D18604 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,8 +288,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D54DAB2F1CED826900D18604 /* SecondViewController.m in Sources */,
 				D54DAAFE1CEC894D00D18604 /* ViewController.m in Sources */,
-				D54DAB2A1CECC20F00D18604 /* help.text in Sources */,
+				D54DAB361CEE18C200D18604 /* JoinViewController.m in Sources */,
 				D54DAAFB1CEC894D00D18604 /* AppDelegate.m in Sources */,
 				D54DAAF81CEC894D00D18604 /* main.m in Sources */,
 			);
@@ -500,6 +516,7 @@
 				D54DAB221CEC894D00D18604 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D54DAB231CEC894D00D18604 /* Build configuration list for PBXNativeTarget "CallBreakTests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +525,7 @@
 				D54DAB251CEC894D00D18604 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D54DAB261CEC894D00D18604 /* Build configuration list for PBXNativeTarget "CallBreakUITests" */ = {
 			isa = XCConfigurationList;
@@ -516,6 +534,7 @@
 				D54DAB281CEC894D00D18604 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -8,7 +8,7 @@
 
 #import "SecondViewController.h"
 
-@interface SecondViewController ()
+@interface SecondViewController ()<UIWebViewDelegate>
 
 @end
 
@@ -16,12 +16,30 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    NSError* error = nil;
+    NSString *path = [[NSBundle mainBundle] pathForResource: @"help" ofType: @"html"];
+    NSString *res = [NSString stringWithContentsOfFile: path encoding:NSUTF8StringEncoding error: &error];
+    [_myWebView loadHTMLString:res baseURL:nil];
+    _myWebView.scrollView.bounces = NO;
+    _myWebView.delegate = self;
+
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void)webViewDidStartLoad:(UIWebView *)webView{
+    NSLog(@"start");
+}
+- (void)webViewDidFinishLoad:(UIWebView *)webView{
+     NSLog(@"finished");
+    
+}
+- (void)webView:(UIWebView *)webView didFailLoadWithError:(nullable NSError *)error{
+     NSLog(@"error %@",error);
+    
 }
 
 /*
